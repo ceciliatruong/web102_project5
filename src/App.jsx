@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import FilterForm from './components/FilterForm';
-import EventList from './components/EventList';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import NavBar from './components/NavBar';
+import EventDetails from './components/EventDetails';
+import NoPage from './components/NoPage';
 function App() {
   const [events, setEvents] = useState([]);
   const client_id = "Mzc1NjE5MTR8MTY5NzQ5MjY1MC43NjY4OTM5";
@@ -46,16 +49,13 @@ function App() {
   console.log(events);
   return (
     <div>
-      <h1>SeatGeek Events</h1>
-      <FilterForm
-        city={city}
-        state={state}
-        userQuery={userQuery}
-        setCity={setCity}
-        setState={setState}
-        setUserQuery={setUserQuery}
-      />
-      <EventList events={events}/>
+      <NavBar />
+      <Routes>
+        {/* <HomePage city={city} state={state} userQuery={userQuery} setCity={setCity} setState={setState} setUserQuery={setUserQuery} events={events}/> */}
+        <Route path="/" element={<HomePage city={city} state={state} userQuery={userQuery} setCity={setCity} setState={setState} setUserQuery={setUserQuery} events={events}/>}/>
+        <Route path="/event-details/:id" element={<EventDetails events={events}/>}/>
+        <Route path="*" element={<NoPage/>}/>
+      </Routes>
     </div>
   );
 };

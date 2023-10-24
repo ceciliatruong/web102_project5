@@ -1,30 +1,24 @@
-# Web Development Project 5 - *SeatGeek Events*
+# Web Development Project 6 - *SeatGeek Events*
 
 Submitted by: **Cecilia Truong**
 
-This web app: **A reduced form of SeatGeek using the SeatGeek API. The user can search events based on any query, city or state.**
+This web app: **Displays SeatGeek events with interesting data about them. An extension of my Project 5 except with an added dynamic details page for each event and visual graphs of the current data using ReCharts!**
 
-Time spent: **4** hours spent in total
+Time spent: **5** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The list displays a list of data fetched using an API call**
-- [x] **Data uses the useEffect React hook and async/await syntax**
-- [x] **The app dashboard includes at least three summary statistics about the data such as**
-  - [x] *Average Price*
-  - [x] *Lowest Price*
-  - [x] *Highest Price*
-  - [x] *Total Listings*
-- [x] **A search bar allows the user to search for an item in the fetched data**
-- [x] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
+- [x] **The app includes at least one unique chart developed using the fetched data that tell an interesting story**
+- [x] **Clicking on an item in the list view displays more details about it**
+- [x] **Clicking on an item has a direct, unique link to that item's detail view page**
+
 
 The following **optional** features are implemented:
 
-- [x] Multiple filters can be applied simultaneously
-- [ ] Filters use different input types such as a text input, a selection, or a slider
-- [x] The user can enter specific bounds for filter values
+- [ ] The site's customized dashboard contains more content that explains what is interesting about the data
+- [ ] The site allows users to toggle between different data visualizations
 
 The following **additional** features are implemented:
 
@@ -34,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='web102project5.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='.\web102project6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...LiceCap!
@@ -47,8 +41,7 @@ GIF created with ...LiceCap!
 
 Describe any challenges encountered while building the app.
 
-I had difficulties with making the CSS for the data container. I specifically struggled with making sure the data was properly aligning with its
-respective data column. Although it is not entirely perfect, my current version is a lot better than it was previously.
+I had trouble trying to figure out how to set up the dynamic routes.
 
 ## License
 

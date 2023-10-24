@@ -37,6 +37,28 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
+.app-container {
+  display: flex; /* Use flexbox to layout items horizontally */
+  flex-wrap: nowrap; /* Allow items to wrap to the next line if the screen is narrow */
+  justify-content: flex-start; /* Start placing items from the left */
+  align-items: flex-start; /* Align items at the top of the container */
+  margin-left: -75px;
+  /* margin-right: -1000px; */
+}
+
+.graph-container {
+  flex: 1; /* Allow the graph container to grow and take available space */
+  padding: 20px; /* Add some padding for spacing */
+  box-sizing: border-box; /* Include padding in width calculations */
+  
+}
+
+.graph-item {
+  margin-right: 50px; /* Add right margin to separate graph items */
+  padding: 20px; /* Add some padding for spacing within graph items */
+  box-sizing: border-box; /* Include padding in width calculations */
+  display: flex; /* Use flex to allow background to fill the entire width */
+  flex-direction: column; /* Stack children vertically */
+  background-color: #f0f0f0; /* Optional background color for clarity */
+  
 }
